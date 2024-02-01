@@ -1,8 +1,8 @@
 .product-create-container {
-  width: 400px; /* Adjust width as needed */
-  margin: 0 auto; /* Center the container horizontally */
+  width: 400px; 
+  margin: 0 auto; 
   padding: 20px;
-  border: 1px solid #ccc; /* Add border around the container */
+  border: 1px solid #ccc; 
   border-radius: 5px;
 }
 

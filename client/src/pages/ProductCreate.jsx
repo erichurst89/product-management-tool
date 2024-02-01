@@ -26,7 +26,7 @@ const ProductCreatePage = () => {
     const handleClick = async e => {
         e.preventDefault();
         try {
-            // Map the properties array to an array of strings
+            
             const formattedProperties = properties.map(property => {
                 return `${property.name}: ${property.value}`;
             });
@@ -35,11 +35,11 @@ const ProductCreatePage = () => {
                 productName: productName,
                 upc: upc,
                 availableOn: availableOn,
-                properties: formattedProperties // Send the formatted properties array
+                properties: formattedProperties 
             };
     
             await axios.post("http://localhost:5000/product", data);
-            navigate("/"); // Redirect to the home page after successful save
+            navigate("/"); 
         } catch (err) {
             console.log(err);
         }
