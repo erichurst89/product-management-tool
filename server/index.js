@@ -1,31 +1,44 @@
-const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 5000; // You can use any port number you prefer
-const mysql = require('mysql');
+import express from "express";
+import mysql from "mysql";
+import cors from "cors";
 
-const connection = mysql.createConnection({
+const app = express();
+
+const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'password',
     database: 'inventoryprojectdb'
 });
 
-// Establish MySQL connection
-connection.connect((err) => {
-    if (err) {
-        console.error('Error connecting to MySQL database: ', err);
-        return;
-    }
-    console.log('Connected to MySQL database');
-});
+app.use(express.json());
+app.use(cors());
 
-// Define routes
+app.get("/", (req, res) => {
+    res.json("Hello this is the backend.");
+  });
 
-app.get('/', (req, res) => {
-    res.send('Hello World! This is your backend server.');
-});
+  app.get("/product", (req, res) => {
+    const q = "SELECT * FROM product";
+    db.query(q, (err, data) => {
+      if (err) return res.json(err);
+      return res.json(data);
+    });
+  });
 
-// Start the server
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+  app.post("/product", (req, res) => {
+    const q = "INSERT INTO product (`productName`, `upc`, `availableOn`, `properties`) VALUES (?)";
+    const values = [req.body.productName, req.body.upc, req.body.availableOn, req.body.properties];
+  
+    db.query(q, [values], (err, data) => {
+      if (err) return res.json(err);
+      return res.json("Product has been created successfully.");
+    });
+  });
+
+
+
+
+app.listen(5000, () => {
+    console.log("Connected to backend!");
 });
