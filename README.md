@@ -1,5 +1,6 @@
 # product-management-tool
 INTRODUCTION    
+
 This project creates a simple product inventory management tool using ReactJS, Node.JS/Express, and MYSQL for the database. 
 It allows the user to create a product with the attributes of name, upc, and date that it is available and also allows them
 to add certain properties to said product such as brand, color, etc.
