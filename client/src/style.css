@@ -21,3 +21,15 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+.add-property-button,
+.save-button,
+.search-button {
+  width: calc(33.33% - 10px); /* 10px is to account for margin and padding */
+  margin: 5px;
+}
+
+.add-property-button {
+  width: calc(66.66% - 10px); /* Adjusting the width to accommodate two buttons */
+}
+
