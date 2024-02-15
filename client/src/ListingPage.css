@@ -1,0 +1,15 @@
+.listing-page-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px; 
+  }
+  
+  .listing-box {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  

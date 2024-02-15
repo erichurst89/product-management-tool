@@ -18,13 +18,14 @@ app.get("/", (req, res) => {
     res.json("Hello this is the backend.");
   });
 
-  app.get("/product", (req, res) => {
+app.get("/product", (req, res) => {
     const q = "SELECT * FROM product";
     db.query(q, (err, data) => {
       if (err) return res.json(err);
       return res.json(data);
     });
   });
+  
 
   app.post("/product", (req, res) => {
     const q = "INSERT INTO product (`productName`, `upc`, `availableOn`, `properties`) VALUES (?)";

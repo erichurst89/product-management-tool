@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-
 const ProductCreatePage = () => {
   const [productName, setProductName] = useState('');
   const [upc, setUpc] = useState('');
@@ -43,8 +42,7 @@ const ProductCreatePage = () => {
   }
 
   const handleSearchClick = () => {
-    // Implement search functionality here
-    console.log('Search clicked');
+    navigate("/listing");
   }
 
   return (
@@ -79,7 +77,7 @@ const ProductCreatePage = () => {
       <button onClick={handleAddProperty} className="add-property-button">Add Property</button>
       <br />
       <button onClick={handleClick} className="save-button">Save</button>
-      <button onClick={handleSearchClick} className="search-button">Search</button>
+      <button onClick={handleSearchClick} className="search-button">Search Products</button>
       
     </div>
   );

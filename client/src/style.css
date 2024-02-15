@@ -25,11 +25,11 @@ input[type="text"] {
 .add-property-button,
 .save-button,
 .search-button {
-  width: calc(33.33% - 10px); /* 10px is to account for margin and padding */
+  width: calc(33.33% - 10px); 
   margin: 5px;
 }
 
 .add-property-button {
-  width: calc(66.66% - 10px); /* Adjusting the width to accommodate two buttons */
+  width: calc(66.66% - 10px); 
 }
 
