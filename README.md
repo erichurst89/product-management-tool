@@ -15,6 +15,8 @@ list where they can check the products that are in their inventory.
 
 SET-UP AND DEPENDENCIES INSTALLATION
 
+Front-end Setup: 
+
 For the backend server set up, I used node.js and express. The dependencies used for the backend were express, mysql, nodemon and cors.
 For the frontend client set up, I used ReactJS to create my application. The dependencies used for the frontend were express, axios, cors,
 and react-router-dom.
