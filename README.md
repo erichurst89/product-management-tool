@@ -14,23 +14,13 @@ to enter in products that are to be stored in their invention. The listing page 
 list where they can check the products that are in their inventory.
 
 SET-UP AND DEPENDENCIES INSTALLATION
-1.) Clone the repo onto your device. 
-2.) Run npm install for all necessary dependencies.
+1. Clone the repo onto your device. 
+2. Run npm install for all necessary dependencies.
   Frontend dependencies: express, axios, cors, react-router-dom
   Backend dependencies: express, mysql, nodemon, cors
-3.) Run npm start in your client and server folder to open the project on localhost:3000
+3. Run npm start in your client and server folder to open the project on localhost:3000
 
 DATABASE DUMP
 
 There is a folder that includes the database dump file needed to import the database schema to your own MySQL workbench. 
 I also included a picture of the schema from mysql. 
-
-
-<<<<<<< HEAD
-Front-end Setup: 
-
-For the backend server set up, I used node.js and express. The dependencies used for the backend were express, mysql, nodemon and cors.
-For the frontend client set up, I used ReactJS to create my application. The dependencies used for the frontend were express, axios, cors,
-and react-router-dom.
-=======
->>>>>>> 4b16cb988375c9311af20c0f52ff5b5c9d89e602
