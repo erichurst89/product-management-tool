@@ -17,8 +17,8 @@ list where they can check the products that are in their inventory.
 
 1. Clone the repo onto your device. 
 2. Run ``` npm install ``` for all necessary dependencies.
-  Frontend dependencies: express, axios, cors, react-router-dom
-  Backend dependencies: express, mysql, nodemon, cors
+* Frontend dependencies: express, axios, cors, react-router-dom
+* Backend dependencies: express, mysql, nodemon, cors
 3. Run ``` npm start ``` in your client and server folder to open the project on localhost:3000
 
 ## **DATABASE DUMP**
