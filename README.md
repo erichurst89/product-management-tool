@@ -23,5 +23,5 @@ SET-UP AND DEPENDENCIES INSTALLATION
 
 DATABASE DUMP
 
-There is a folder that includes the database dump file needed to import the database schema to your own MySQL workbench.
-I also included a picture of the schema from mysql. ![alt text]("C:\Users\ehurs\OneDrive\Pictures\Screenshots\schema for highlands project.png")
+There is a folder that includes the database dump file needed to import the database schema to your own MySQL workbench. 
+I also included a picture of the schema from mysql. ![alt text](C:\Users\ehurs\OneDrive\Pictures\Screenshots\schema for highlands project.png)
