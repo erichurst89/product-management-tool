@@ -26,8 +26,11 @@ list where they can check the products that are in their inventory.
 ## **EXAMPLES OF APP USAGE**
 
 Here are some screenshots of the web app working. This screenshot shows the product create page.
-![alt text](<example of product create page.png>)
+
+![alt text](<example of product create page-1.png>)
+
 This screenshot shows the listing page with some products I created, showing them retrieved from the database.
+
 ![alt text](<example of listing page.png>)
 
 ## **DATABASE DUMP**
