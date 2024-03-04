@@ -16,12 +16,15 @@ list where they can check the products that are in their inventory.
 ## **SET-UP AND DEPENDENCIES INSTALLATION**
 
 1. Clone the repo onto your device.
-2. Run `npm install` for all necessary dependencies.
+2. Use the `cd client` terminal command to enter the client folder and run `npm install` for all necessary dependencies.
 
-- Frontend dependencies: express, axios, cors, react-router-dom
+- Frontend dependencies: express, axios, cors, react-router-dom.
+
+3. Use the `cd server` terminal command to enter the server folder and run `npm install` for all necessary depencies.
+
 - Backend dependencies: express, mysql, nodemon, cors
 
-3. Run `npm start` in your client and server folder to open the project on localhost:3000
+4. Run `npm start` in your client and server folder to run the application.
 
 ## **EXAMPLES OF APP USAGE**
 
